@@ -45,13 +45,13 @@ export default function Navbar() {
       credentials: 'include',
     }).then(response => {
       if (response.status === 200) {
-        setUserInfo(null);
         window.location.href = '/';
       }
       else{
         console.log("cannot log out")
       }
     })
+    setUserInfo(null);
   }
 
  
