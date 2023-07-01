@@ -6,7 +6,7 @@ import { CartContext } from '../CartContext';
 export default function Navbar() {
    
 
-  const { userinfo, setUserInfo } = useContext(UserContext);
+  const { setUserInfo,userinfo } = useContext(UserContext);
   // // const {info} = useContext(MyContext);
    const [cart] = useContext(CartContext);
    console.log(cart)
@@ -23,6 +23,8 @@ export default function Navbar() {
       })
 
   }, [setUserInfo]);
+
+  console.log(userinfo)
 
   var Email = userinfo?.Email;
   var position = userinfo?.Position;
