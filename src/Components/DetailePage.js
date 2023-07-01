@@ -31,9 +31,32 @@ export default function DetailePage() {
   }, [postId]);
 
   if (Object.keys(Products).length === 0) {
-    return <div class="spinner-border text-dark" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>;
+    return (
+    <div class="section-center">
+    <div class="section-path">
+      <div class="globe">
+        <div class="wrapper">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+   </div>
+   );
   }
   // const type = typeof (Parse)
   // console.log(type);
