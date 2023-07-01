@@ -24,7 +24,7 @@ export default function Navbar() {
 
   }, [setUserInfo]);
 
-  console.log({userinfo})
+  console.log(userinfo)
 
   var Email = userinfo?.Email;
   var position = userinfo?.Position;
