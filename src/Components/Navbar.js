@@ -42,10 +42,10 @@ export default function Navbar() {
       credentials: 'include',
     }).then(response => {
       if (response.ok) {
+        setUserInfo('');
         window.location.href = '/';
       }
     })
-    setUserInfo('');
   }
 
  
