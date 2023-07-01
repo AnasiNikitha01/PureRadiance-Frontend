@@ -99,7 +99,9 @@ export default function DetailePage() {
   };
   setcart(cart => [...cart, myobj]);
   localStorage.setItem('cart', JSON.stringify([...cart, myobj]));
-  
+  if(Count===0){
+    alert('Add the Quantity')
+  }
   // Redirect to the cart page
   window.location.href = `/${userinfo.id}/cart`;
 }
