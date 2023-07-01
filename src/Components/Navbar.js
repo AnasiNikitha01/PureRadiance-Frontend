@@ -21,7 +21,8 @@ export default function Navbar() {
       credentials: 'include',
     }).then((response) =>
       response.json()).then((data) => {
-        setUserInfo(data);
+        const obj = JSON.parse(data)
+        setUserInfo(obj);
       }).catch((error) => {
         console.log(error);
       })
