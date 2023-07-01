@@ -14,6 +14,10 @@ export default function Navbar() {
   useEffect(() => {
 
     fetch('https://pure-radiance-backend.onrender.com/profiles', {
+      method : 'GET',
+      headers:{
+        'Content-Type' : 'application/json',
+      },
       credentials: 'include',
     }).then((response) =>
       response.json()).then((data) => {
