@@ -33,6 +33,7 @@ export default function DetailePage() {
   if (Object.keys(Products).length === 0) {
     return (
     <div class="section-center">
+      <p style={{'textAlign':'center'}}>LOADING...</p>
     <div class="section-path">
       <div class="globe">
         <div class="wrapper">
