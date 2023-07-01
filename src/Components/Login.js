@@ -43,7 +43,7 @@ export default function Login() {
       result.json().then(data=>{
        console.log({data})
        if(data.position === Position){
-      window.location.href = `/${data.id}`;
+      // window.location.href = `/${data.id}`;
        }else{
         alert(`You registered as ${data.position}, but selected ${Position}. Please change your Option.`);
         setdisp1('none')
