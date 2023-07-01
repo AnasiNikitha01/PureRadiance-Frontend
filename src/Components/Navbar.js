@@ -38,7 +38,7 @@ export default function Navbar() {
 
   function logout() {
     fetch('https://pure-radiance-backend.onrender.com/logout', {
-      method: 'POST',
+      method: 'GET',
       credentials: 'include',
     }).then(response => {
       if (response.ok) {
