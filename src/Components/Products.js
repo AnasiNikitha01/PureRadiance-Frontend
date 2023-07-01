@@ -38,7 +38,30 @@ export default function Products() {
       <h2>Product Collection</h2>
       <div className='card-cont'>
         {products.length === 0 ? (
-          <h3 style={{ margin: '150px auto' }}>No Products Yet</h3>
+          <div class="section-center">
+          <div class="section-path">
+            <div class="globe">
+              <div class="wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+         </div>
         ) : (
           products.map((product) => (
             <div className='cards' key={product._id}>
