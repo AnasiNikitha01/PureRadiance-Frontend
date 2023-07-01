@@ -26,7 +26,7 @@ export default function Login() {
     event.preventDefault();
     
 
-    const result = await fetch("http://localhost:5001/login", {
+    const result = await fetch("https://pure-radiance-backend.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

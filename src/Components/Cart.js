@@ -62,7 +62,7 @@ export default function Cart() {
                 <div className="card mb-3" style={{ "maxWidth": "90%" }} key={data.Products._id} id='cart-card'>
                   <div className="row g-0">
                     <div className="col-md-5" id='cart-img'>
-                      <img src={`http://localhost:5001/${data.Products.ProductImage}`} className="img-fluid rounded-start" alt="..." />
+                      <img src={`https://pure-radiance-backend.onrender.com/${data.Products.ProductImage}`} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-md-7">
                       <div className="card-body" id='cart-body'>
@@ -106,7 +106,7 @@ export default function Cart() {
                 <div className="card mb-3" style={{ "maxWidth": "90%" }} key={data.Products._id} id='cart-card'>
                   <div className="row g-0">
                     <div className="col-md-5" id='cart-img'>
-                      <img src={`http://localhost:5001/${data.Products.ProductImage}`} className="img-fluid rounded-start" alt="..." />
+                      <img src={`https://pure-radiance-backend.onrender.com/${data.Products.ProductImage}`} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-md-7">
                       <div className="card-body" id='cart-body'>

@@ -9,7 +9,7 @@ export default function SkinProblem() {
      console.log(problem);
    
      useEffect(()=>{
-        fetch(`http://localhost:5001/search/${problem}/SkinProblem`,{
+        fetch(`https://pure-radiance-backend.onrender.com/search/${problem}/SkinProblem`,{
             method : 'GET',
             headers:{
                 'Content-Type' : 'application/json',
@@ -50,7 +50,7 @@ export default function SkinProblem() {
            <div className="cards" key={Product._id}>
                 <h5>{Product.ProductName}</h5>
               <div className="card-img">
-                <img src={`http://localhost:5001/${Product.ProductImage}`} alt="" />
+                <img src={`https://pure-radiance-backend.onrender.com/${Product.ProductImage}`} alt="" />
               </div>
               <div className="info">
                 <h5>{Product.BrandName}</h5>

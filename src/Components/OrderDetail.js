@@ -8,7 +8,7 @@ export default function OrderDetail() {
   console.log(id, index);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/${id}/${index}/OrderDetails`, {
+    fetch(`https://pure-radiance-backend.onrender.com/${id}/${index}/OrderDetails`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
@@ -28,7 +28,7 @@ export default function OrderDetail() {
     window.location.href = `/${i}/details`;
   }
   async function remove(i) {
-    const result = await fetch(`http://localhost:5001/${i}/cancelOrder`, {
+    const result = await fetch(`https://pure-radiance-backend.onrender.com/${i}/cancelOrder`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export default function OrderDetail() {
           {data.products.map((info, i) => (
             <div className="row" id='det-row' key={i}>
               <div className="col-4" id='det-col1'><img className='productImg'
-                src={`http://localhost:5001/${info.Products.ProductImage}`} alt="" /></div>
+                src={`https://pure-radiance-backend.onrender.com/${info.Products.ProductImage}`} alt="" /></div>
               <div className="col-4" id='det-col2'>
                 <p className="name">{info.Products.ProductName}</p>
                 <p className="price">Price : &#8377; {info.Products.ProductPrice}/- </p>

@@ -25,7 +25,7 @@ export default function Register() {
 
     
   
-    const result = await fetch("http://localhost:5001/register",{
+    const result = await fetch("https://pure-radiance-backend.onrender.com/register",{
       method:"POST",
       headers:{
           'Content-Type' : 'application/json',

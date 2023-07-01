@@ -9,7 +9,7 @@ export default function AllOrders() {
   console.log(id);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/Orders/get/${id}`, {
+    fetch(`https://pure-radiance-backend.onrender.com/Orders/get/${id}`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

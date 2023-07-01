@@ -43,7 +43,7 @@ function App() {
   console.log(id, email,position);  
 
   useEffect(() => {
-    fetch('http://localhost:5001/allProducts', {
+    fetch('https://pure-radiance-backend.onrender.com/allProducts', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ function App() {
         <h3>Most Popular Products</h3>
         {Prods.map((data, index) => (
           <div className="card" style={{ "width": "18rem" }} key={index}>
-            <img src={`http://localhost:5001/${data.ProductImage}`} className="card-img-top" alt="..." />
+            <img src={`https://pure-radiance-backend.onrender.com/${data.ProductImage}`} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{data.ProductName}</h5>
               <p className="card-text" id='price-card'> &#8377; {data.ProductPrice}/-</p>
@@ -136,7 +136,7 @@ function App() {
         <h3>Most Popular Products</h3>
         {Prods.map((data, index) => (
           <div className="card" style={{ "width": "18rem" }} key={index}>
-            <img src={`http://localhost:5001/${data.ProductImage}`} className="card-img-top" alt="..." />
+            <img src={`https://pure-radiance-backend.onrender.com/${data.ProductImage}`} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{data.ProductName}</h5>
               <p className="card-text" id='price-card'> &#8377; {data.ProductPrice}/-</p>

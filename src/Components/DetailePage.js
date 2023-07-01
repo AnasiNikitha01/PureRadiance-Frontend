@@ -13,7 +13,7 @@ export default function DetailePage() {
   console.log(postId)
 
   useEffect(() => {
-    fetch(`http://localhost:5001/${postId}/details`, {
+    fetch(`https://pure-radiance-backend.onrender.com/${postId}/details`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ export default function DetailePage() {
 
 
  async function delete_post(postId){
-     let deletepost = await fetch(`http://localhost:5001/${postId}/Delete`,{
+     let deletepost = await fetch(`https://pure-radiance-backend.onrender.com/${postId}/Delete`,{
         method : 'DELETE',
         credentials : 'include',
        })
@@ -106,7 +106,7 @@ export default function DetailePage() {
 
             {/* <!-- Button trigger modal --> */}
             <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src={`http://localhost:5001/${Products.ProductImage}`} alt="" />
+              <img src={`https://pure-radiance-backend.onrender.com/${Products.ProductImage}`} alt="" />
 
             </button>
 
@@ -118,7 +118,7 @@ export default function DetailePage() {
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div className="modal-body">
-                    <img src={`http://localhost:5001/${Products.ProductImage}`} alt="" />
+                    <img src={`https://pure-radiance-backend.onrender.com/${Products.ProductImage}`} alt="" />
                   </div>
                 </div>
               </div>

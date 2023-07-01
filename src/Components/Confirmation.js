@@ -29,7 +29,7 @@ export default function Confirmation() {
 
 
     function Payment() {
-          fetch(`http://localhost:5001/orders`,{
+          fetch(`https://pure-radiance-backend.onrender.com/orders`,{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json',
@@ -55,7 +55,7 @@ export default function Confirmation() {
             {cart.map((data, index) => (
                 <Link className="Cart-items" to={`/${data.Products._id}/details`} key={data.Products._id}>
                     <div className="c-img">
-                        <img src={`http://localhost:5001/${data.Products.ProductImage}`} alt="" />
+                        <img src={`https://pure-radiance-backend.onrender.com/${data.Products.ProductImage}`} alt="" />
                     </div>
                     <div className="c-info">
                         <div className="c-title">{data.Products.ProductName}</div>

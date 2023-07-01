@@ -8,7 +8,7 @@ export default function Products() {
   
 
   useEffect(() => {
-    fetch(`http://localhost:5001/products/get/${product}`, {
+    fetch(`https://pure-radiance-backend.onrender.com/products/get/${product}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export default function Products() {
             <div className='cards' key={product._id}>
               <h5>{product.ProductName}</h5>
               <div className='card-img'>
-                <img src={`http://localhost:5001/${product.ProductImage}`} alt='' />
+                <img src={`https://pure-radiance-backend.onrender.com/${product.ProductImage}`} alt='' />
               </div>
               <div className='info'>
                 <h5>{product.BrandName}</h5>

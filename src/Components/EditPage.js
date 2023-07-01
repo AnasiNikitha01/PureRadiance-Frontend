@@ -22,7 +22,7 @@ export default function EditPage() {
     console.log(postId)
 
     useEffect(() => {
-        fetch(`http://localhost:5001/${postId}/getEdit/editpage`, {
+        fetch(`https://pure-radiance-backend.onrender.com/${postId}/getEdit/editpage`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ export default function EditPage() {
          }
        console.log(ProductImage);
 
-      const result = await fetch(`http://localhost:5001/edit`,{
+      const result = await fetch(`https://pure-radiance-backend.onrender.com/edit`,{
         method:'PUT',
         credentials:'include',
         body:data,

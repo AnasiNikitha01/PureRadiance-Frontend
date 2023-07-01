@@ -10,7 +10,7 @@ export default function ProfileEdit() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch(`http://localhost:5001/${id}/profile`, {
+            const response = await fetch(`https://pure-radiance-backend.onrender.com/${id}/profile`, {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export default function ProfileEdit() {
 
       
         try {
-          const result = await fetch(`http://localhost:5001/profileEdit/${id}`, {
+          const result = await fetch(`https://pure-radiance-backend.onrender.com/profileEdit/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

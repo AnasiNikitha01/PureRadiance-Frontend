@@ -10,7 +10,7 @@ export default function ProfilePage() {
   const {id} = useParams();
   
   useEffect(()=>{
-  fetch(`http://localhost:5001/${id}/profile`,{
+  fetch(`https://pure-radiance-backend.onrender.com/${id}/profile`,{
     method : 'GET',
     headers:{
       'Content-Type':'application/json',

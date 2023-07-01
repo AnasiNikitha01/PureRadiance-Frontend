@@ -9,7 +9,7 @@ export default function AllBrandProducts() {
     console.log(id,name);
 
     useEffect(()=>{
-        fetch(`http://localhost:5001/${id}/${name}`,{
+        fetch(`https://pure-radiance-backend.onrender.com/${id}/${name}`,{
             method : 'GET',
             headers : {
                 'Content-Type' : 'application-json',
@@ -37,7 +37,7 @@ export default function AllBrandProducts() {
            <div className="cards" key={Product._id}>
                 <h5>{Product.ProductName}</h5>
               <div className="card-img">
-                <img src={`http://localhost:5001/${Product.ProductImage}`} alt="" />
+                <img src={`https://pure-radiance-backend.onrender.com/${Product.ProductImage}`} alt="" />
               </div>
               <div className="info">
                 <h5>{Product.BrandName}</h5>

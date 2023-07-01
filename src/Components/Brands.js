@@ -5,7 +5,7 @@ export default function Brands() {
   const [All,SetAll] = useState([]);
 
   useEffect(()=>{
-   fetch('http://localhost:5001/brands',{
+   fetch('https://pure-radiance-backend.onrender.com/brands',{
       method : 'GET',
       headers : {
         'Content-Type' : 'application/json',

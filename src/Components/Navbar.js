@@ -13,7 +13,7 @@ export default function Navbar() {
 
   useEffect(() => {
 
-    fetch('http://localhost:5001/profiles', {
+    fetch('https://pure-radiance-backend.onrender.com/profiles', {
       credentials: 'include',
     }).then((response) =>
       response.json()).then((data) => {
@@ -30,7 +30,7 @@ export default function Navbar() {
   console.log(id,Email,position);
 
   function logout() {
-    fetch('http://localhost:5001/logout', {
+    fetch('https://pure-radiance-backend.onrender.com/logout', {
       method: 'POST',
       credentials: 'include',
     }).then(response => {

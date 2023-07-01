@@ -56,7 +56,7 @@ export default function BrandForm() {
     data.set("BrandObj", JSON.stringify(BrandObj));
 
 
-    const result = await fetch(`http://localhost:5001/${id}/brandform`, {
+    const result = await fetch(`https://pure-radiance-backend.onrender.com/${id}/brandform`, {
       method: 'POST',
       credentials: 'include',
       body: data,
