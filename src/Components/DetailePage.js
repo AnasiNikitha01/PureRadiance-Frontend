@@ -31,7 +31,9 @@ export default function DetailePage() {
   }, [postId]);
 
   if (Object.keys(Products).length === 0) {
-    return <div>Loading...</div>;
+    return <div class="spinner-border text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>;
   }
   // const type = typeof (Parse)
   // console.log(type);
