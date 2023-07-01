@@ -1,0 +1,3 @@
+lavender ,light lavender, white backgrounds
+colour black,white for headings
+hover color lavender to dark lavender
