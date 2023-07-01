@@ -45,7 +45,7 @@ export default function Navbar() {
         window.location.href = '/';
       }
     })
-    setUserInfo(null);
+    setUserInfo('');
   }
 
  
