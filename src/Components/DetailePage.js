@@ -32,8 +32,6 @@ export default function DetailePage() {
 
   if (Object.keys(Products).length === 0) {
     return (
-      <>
-      <p style={{'textAlign':'center'}}>LOADING...</p>
     <div class="section-center">
     <div class="section-path">
       <div class="globe">
@@ -58,7 +56,6 @@ export default function DetailePage() {
       </div>
     </div>
    </div>
-   </>
    );
   }
   // const type = typeof (Parse)
