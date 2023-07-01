@@ -46,7 +46,7 @@ export default function Navbar() {
     }).then(response => {
       if (response.status === 200) {
         setUserInfo(null);
-        // window.location.href = '/';
+        window.location.href = '/';
       }
       else{
         console.log("cannot log out")
