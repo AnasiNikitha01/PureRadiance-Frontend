@@ -10,7 +10,6 @@ export default function DetailePage() {
   const { postId } = useParams();
   const { userinfo } = useContext(UserContext);
   let [Count, SetCount] = useState(0);
-  const [Loader,SetLoaders] = useState('none');
   console.log(postId)
 
   useEffect(() => {
@@ -32,7 +31,9 @@ export default function DetailePage() {
   }, [postId]);
 
   if (Object.keys(Products).length === 0) {
-     SetLoaders('block')
+    return (
+     
+   );
   }
   // const type = typeof (Parse)
   // console.log(type);
@@ -100,33 +101,6 @@ export default function DetailePage() {
 
   return (
     <div className='DetailPage'>
-       <div className='loader' style={{'display':'none'}}>
-            <p style={{'textAlign':'center'}}>LOADING...</p>
-    <div class="section-center">
-    <div class="section-path">
-      <div class="globe">
-        <div class="wrapper">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-   </div>
-   </div>
       <h1> {Products.ProductName}</h1>
       <div className="container">
         <div className="row" id='detail_row1'>
